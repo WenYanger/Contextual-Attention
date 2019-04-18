@@ -29,6 +29,7 @@ Mask Shape   [batch_size, time_step, 1]
 
 ### Keras version:
 ```
+from Attention_Keras import Attention
 model.add(LSTM(64, return_sequences=True))
 model.add(Attention())
 # next add a Dense layer (for classification/regression) or whatever...
@@ -36,7 +37,7 @@ model.add(Attention())
 
 ### Pytorch version:
 ```
-from Attention import Attention
+from Attention_Pytorch import Attention
 import torch
 import numpy
 
